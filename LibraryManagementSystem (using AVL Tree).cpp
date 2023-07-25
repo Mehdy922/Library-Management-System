@@ -616,7 +616,7 @@ public:
 	}
 	void rightRotate(BNode*& x) {
 
-		BNode* orphan = x->left->right;	// 1. detach Y(left child’s) right subtree
+		BNode* orphan = x->left->right;	// 1. detach Y(left childÂ’s) right subtree
 		BNode* y = x->left;		// 2. consider Y(left child) to be the new parent
 		x->left->right = x;		// 3. attach old parent onto right of new parent
 		x->left = orphan;
@@ -634,7 +634,7 @@ public:
 	}
 	void leftRotate(BNode*& x) {
 
-		BNode* orphan = x->right->left;	// 1. detach Y(left child’s) right subtree
+		BNode* orphan = x->right->left;	// 1. detach Y(left childÂ’s) right subtree
 		BNode* y = x->right;		// 2. consider Y(left child) to be the new parent
 		x->right->left = x;		// 3. attach old parent onto right of new parent
 		x->right = orphan;
